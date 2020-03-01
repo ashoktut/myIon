@@ -1,7 +1,0 @@
-{
-  "name": "MyKasi",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

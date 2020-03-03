@@ -35,38 +35,48 @@
                                     <ion-card-title>New Expense</ion-card-title>
                                 </ion-card-header>
 
-                                <ion-card-content>
-                                    <ion-item>
-                                        <ion-label position="floating">Expense Reason</ion-label>
-                                            <ion-input type = "text"></ion-input>
-                                    </ion-item>
+                                        <ion-card-content>
+                                            <ion-item>
+                                                <ion-label position="floating">Expense Reason</ion-label>
+                                                <ion-input type = "text" id = "input-reason"></ion-input>
+                                            </ion-item>
 
-                                    <ion-item>
-                                        <ion-label position="floating">Expense Amount</ion-label>
-                                        <ion-input type = "number"></ion-input>
-                                    </ion-item>
+                                            <ion-item>
+                                                <ion-label position="floating">Expense Amount</ion-label>
+                                                <ion-input type = "number" id = "input-amount"></ion-input>
+                                            </ion-item>
 
 
-                                        <div margin-vertical float-right>
-                                            <ion-button shape="round" fill="outline" color="danger">
-                                                <ion-icon slot="start" name="refresh-outline"></ion-icon>
-                                                    Clear
-                                            </ion-button>
+                                                <div margin-vertical text-right>
+                                                    <ion-button shape="round" fill="outline" color="danger">
+                                                        <ion-icon slot="start" name="refresh-outline" id = "btn-clear"></ion-icon>
+                                                            Clear
+                                                    </ion-button>
 
-                                             <ion-button shape="round" fill="outline">
-                                                <ion-icon slot = "start" name="add-circle-outline"></ion-icon>
-                                                    Submit
-                                            </ion-button>
-                                        </div>                                            
-                                </ion-card-content>
+                                                    <ion-button shape="round" fill="outline" id = "btn-submit">
+                                                        <ion-icon slot = "start" name="add-circle-outline"></ion-icon>
+                                                            Submit
+                                                    </ion-button>
+                                                </div>                                            
+                                        </ion-card-content>
 
                             </ion-card>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-list id = "expenses-list"></ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <p>Total Expenses: <span id="total-expenses"></span></p>
                     </ion-col>
                 </ion-row>
             </ion-grid>
 
         </ion-content>
     </ion-app>
-    
+    <script src = "app.js"></script>
 </body>
 </html>
